@@ -1,6 +1,9 @@
 import streamlit as st
+try:
+    import geemap.foliumap as geemap
+except Exception:
+    import geemap
 import ee
-import geemap.foliumap as geemap
 
 def render(m, roi, params, col_res):
     st.markdown("### Encroachment Detection Results")
