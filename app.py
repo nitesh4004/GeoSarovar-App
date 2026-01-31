@@ -35,7 +35,7 @@ if 'detected_state' not in st.session_state: st.session_state['detected_state'] 
 
 # --- 4. SIDEBAR ---
 with st.sidebar:
-    st.image("geosarovar.png", use_container_width=True)
+    st.image("geosarovar.png", width=150)
     
     # Show Active Project
     if 'active_project' in st.session_state:
