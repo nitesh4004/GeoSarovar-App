@@ -1,6 +1,8 @@
-import geemap.foliumap as geemap
-import streamlit as st
-
+try:
+    import geemap.foliumap as geemap
+except Exception:
+    import geemap
+    import streamlit as st
 # Helper for Safe Map Loading (ROBUST FOLIUM VERSION)
 def get_safe_map(roi_method, map_style, is_calculated, height=500):
     # 1. Initialize Map (Folium Backend)
